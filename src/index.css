@@ -60,6 +60,11 @@ li:not(:first-child) .main-menu::before {
     background-color: var(--color-cream);
 }
 
+.menu li,
+.menu button {
+    font-size: 1rem;
+}
+
 .menu > li {
     display: flex;
     flex-grow: 1;
@@ -142,7 +147,18 @@ li:last-of-type > .main-menu {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-image: url('./menu/has-submenu.svg');
+    background-image: url('assets/has-submenu.svg');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.menu-image {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.group:hover .menu-image {
+    visibility: visible;
+    opacity: 1;
 }

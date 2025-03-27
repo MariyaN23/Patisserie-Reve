@@ -1,22 +1,47 @@
+import {
+    AlmondFinanciers, BerryChiaPudding,
+    ChocolateAvocadoMousseFigs,
+    ChocolateRaspberryTruffle, CremeBruleeDonuts,
+    CrunchyAlmondFrangipane,
+    DarkChocolateSwirl, EggnogChiffonPie,
+    GoldenHoneyButter, ItalianCantucci,
+    KouignAmann, LavenderShortbread, LemonBlueberryTart,
+    MangoPassionfruitMousse, MatchaWhiteChocolateEclairs,
+    MoltenLavaCake,
+    OperaCake,
+    ParisBrestHazelnutPraline, PistachioRoseMadeleines, PumpkinSpiceCake,
+    RaspberryCreamCheese,
+    RedVelvetCheesecakeSwirl, SaltedCaramelMacarons,
+    SaltedCaramelPecan,
+    SeaSaltDarkChocolateChunk,
+    StrawberryShortcake, SummerBerryPavlova,
+    TarteauCitronMeringuee,
+    TripleLayerFudge, VeganChocolateAvocadoMousseCake, VienneseWhirls,
+    WhiteChocolateCranberry
+} from "../assets/images"
+
 export type MenuItem = {
     title: string
     link?: string
+    image?: string
     children?: MenuItem[]
 }
 
 export const menuItems: MenuItem[] = [
     {
         title: 'Morning Delights',
-        link: '/',
+        children: [
+            {title: 'Berry Chia Pudding', link: '/', image: BerryChiaPudding},
+        ],
     },
     {
         title: 'Buttery Croissants',
         children: [
-            {title: 'Golden Honey-Butter', link: '/'},
-            {title: 'Crunchy Almond Frangipane', link: '/'},
-            {title: 'Dark Chocolate Swirl', link: '/'},
-            {title: 'Raspberry Cream Cheese', link: '/'},
-            {title: 'Salted Caramel Pecan', link: '/'},
+            {title: 'Golden Honey-Butter', link: '/', image: GoldenHoneyButter},
+            {title: 'Crunchy Almond Frangipane', link: '/', image: CrunchyAlmondFrangipane},
+            {title: 'Dark Chocolate Swirl', link: '/', image: DarkChocolateSwirl},
+            {title: 'Raspberry Cream Cheese', link: '/', image: RaspberryCreamCheese},
+            {title: 'Salted Caramel Pecan', link: '/', image: SaltedCaramelPecan},
         ],
     },
     {
@@ -25,28 +50,29 @@ export const menuItems: MenuItem[] = [
             {
                 title: 'Chocolate Heaven',
                 children: [
-                    {title: 'Molten Lava Cake', link: '/'},
-                    {title: 'Triple-Layer Fudge', link: '/'},
-                    {title: 'Chocolate-Raspberry Truffle', link: '/'},
+                    {title: 'Molten Lava Cake', link: '/', image: MoltenLavaCake},
+                    {title: 'Triple-Layer Fudge', link: '/', image: TripleLayerFudge},
+                    {title: 'Chocolate-Raspberry Truffle', link: '/', image: ChocolateRaspberryTruffle},
+                    {title: 'Chocolate Avocado Mousse Tart with Figs', link: '/', image: ChocolateAvocadoMousseFigs},
                 ],
             },
             {
                 title: 'Fruit Fantasies',
                 children: [
-                    {title: 'Strawberry Shortcake', link: '/'},
-                    {title: 'Mango Passion fruit Mousse', link: '/'},
+                    {title: 'Strawberry Shortcake', link: '/', image: StrawberryShortcake},
+                    {title: 'Mango Passion fruit Mousse', link: '/', image: MangoPassionfruitMousse},
                 ],
             },
-            {title: 'Red Velvet Cheesecake Swirl', link: '/'},
+            {title: 'Red Velvet Cheesecake Swirl', link: '/', image: RedVelvetCheesecakeSwirl},
         ],
     },
     {
         title: 'French Patisserie',
         children: [
-            {title: 'Paris-Brest (Hazelnut Praline)', link: '/'},
-            {title: 'Tarte au Citron Meringuée', link: '/'},
-            {title: 'Opera Cake (Layers of Coffee & Ganache)', link: '/'},
-            {title: 'Kouign-Amann (Caramelized Butter Cake)', link: '/'},
+            {title: 'Paris-Brest (Hazelnut Praline)', link: '/', image: ParisBrestHazelnutPraline},
+            {title: 'Tarte au Citron Meringuée', link: '/', image: TarteauCitronMeringuee},
+            {title: 'Opera Cake (Layers of Coffee & Ganache)', link: '/', image: OperaCake},
+            {title: 'Kouign-Amann (Caramelized Butter Cake)', link: '/', image: KouignAmann},
         ],
     },
     {
@@ -55,16 +81,16 @@ export const menuItems: MenuItem[] = [
             {
                 title: 'Gourmet Cookies',
                 children: [
-                    {title: 'Sea Salt Dark Chocolate Chunk', link: '/'},
-                    {title: 'White Chocolate & Cranberry', link: '/'},
-                    {title: 'Lavender Shortbread', link: '/'},
+                    {title: 'Sea Salt Dark Chocolate Chunk', link: '/', image: SeaSaltDarkChocolateChunk},
+                    {title: 'White Chocolate & Cranberry', link: '/', image: WhiteChocolateCranberry},
+                    {title: 'Lavender Shortbread', link: '/', image: LavenderShortbread},
                 ],
             },
             {
                 title: 'European Classics',
                 children: [
-                    {title: 'Viennese Whirls', link: '/'},
-                    {title: 'Italian Cantucci', link: '/'},
+                    {title: 'Viennese Whirls', link: '/', image: VienneseWhirls},
+                    {title: 'Italian Cantucci', link: '/', image: ItalianCantucci},
                 ],
             },
         ],
@@ -72,29 +98,29 @@ export const menuItems: MenuItem[] = [
     {
         title: 'Seasonal Sensations',
         children: [
-            {title: 'Pumpkin Spice Cake', link: '/'},
-            {title: 'Eggnog Chiffon Pie', link: '/'},
-            {title: 'Summer Berry Pavlova', link: '/'},
+            {title: 'Pumpkin Spice Cake', link: '/', image: PumpkinSpiceCake},
+            {title: 'Eggnog Chiffon Pie', link: '/', image: EggnogChiffonPie},
+            {title: 'Summer Berry Pavlova', link: '/', image: SummerBerryPavlova},
         ],
     },
     {
         title: 'Guilt-Free Pleasures',
         children: [
-            {title: 'Vegan Chocolate Avocado Mousse Cake', link: '/'},
-            {title: 'Gluten-Free Almond Financiers', link: '/'},
-            {title: 'Sugar-Free Lemon Blueberry Tart', link: '/'},
+            {title: 'Vegan Chocolate Avocado Mousse Cake', link: '/', image: VeganChocolateAvocadoMousseCake},
+            {title: 'Gluten-Free Almond Financiers', link: '/', image: AlmondFinanciers},
+            {title: 'Sugar-Free Lemon Blueberry Curd Tart', link: '/', image: LemonBlueberryTart},
         ],
     },
     {
         title: 'Specialty Desserts',
         children: [
-            {title: 'Crème Brûlée Donuts', link: '/'},
-            {title: 'Matcha White Chocolate Éclairs', link: '/'},
+            {title: 'Crème Brûlée Donuts', link: '/', image: CremeBruleeDonuts},
+            {title: 'Matcha White Chocolate Éclairs', link: '/', image: MatchaWhiteChocolateEclairs},
             {
                 title: 'Mini Indulgences',
                 children: [
-                    {title: 'Salted Caramel Macarons', link: '/'},
-                    {title: 'Pistachio Rose Madeleines', link: '/'},
+                    {title: 'Salted Caramel Macarons', link: '/', image: SaltedCaramelMacarons},
+                    {title: 'Pistachio Rose Madeleines', link: '/', image: PistachioRoseMadeleines},
                 ],
             },
         ],
