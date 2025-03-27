@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --cream: #F9F1F0;
+    --rose-quartz: #FADCD9;
+    --dusty-rose: #F8AFA6;
+    --coral: #F79489;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", system-ui, sans-serif;
+    min-height: 100vh;
+    background: var(--cream);
+    color: var(--coral);
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+li:not(:first-child) .main-menu::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 1px solid var(--rose-quartz);
+    height: 50%;
+    background-color: var(--cream);
+}
+
+.menu > li {
+    display: flex;
+    flex-grow: 1;
+}
+
+.menu button, a {
+    cursor: pointer;
+}
+
+.menu > li:hover > .submenu::after {
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.menu li:not(.menu > li) {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.menu li:not(.menu > li):hover,
+.menu li:not(.menu > li):has(a:hover),
+.menu li:not(.menu > li):has(button:hover) {
+    opacity: 1;
+}
+
+.menu .main-menu {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.menu:hover li:not(:hover) .main-menu {
+    opacity: 0.3;
+}
+
+li:first-of-type > .main-menu {
+    text-align: start;
+}
+
+li:last-of-type > .main-menu {
+    text-align: end;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--cream);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.submenu li:hover > .submenu,
+.main-menu:focus + .submenu,
+.submenu:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > li:not(:hover):not(:focus-within) .submenu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu button,
+.submenu a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    text-align: start;
+}
+
+.has-submenu button::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('./menu/has-submenu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
