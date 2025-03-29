@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-style: var(--font-primary);
+    font-family: var(--font-primary), cursive;
     font-size: 2rem;
     font-weight: bolder;
 }
@@ -119,9 +119,8 @@ li:last-of-type > .main-menu {
     left: 100%;
 }
 
-.submenu li:hover > .submenu,
-.main-menu:focus + .submenu,
-.submenu:hover {
+.menu > li:hover > .submenu,
+.submenu li:hover > .submenu {
     opacity: 1;
     visibility: visible;
 }

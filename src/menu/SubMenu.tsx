@@ -28,7 +28,7 @@ export const SubMenu = ({ items }: Props) => {
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full h-full object-cover"
+                                className='w-full h-full object-cover p-2'
                             />
                         </div>
                     )}

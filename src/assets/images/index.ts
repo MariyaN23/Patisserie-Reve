@@ -1,5 +1,5 @@
 export { default as BerryChiaPudding } from "./BerryChiaPudding.jpg";
-export { default as GoldenHoneyButter } from "./Golden-Honey-Butter.jpg";
+export { default as GoldenHoneyButter } from "./Golden-Honey-Butter.webp";
 export { default as CrunchyAlmondFrangipane } from "./Crunchy-Almond-Frangipane.jpg";
 export { default as DarkChocolateSwirl } from "./Dark-Chocolate-Swirl.webp";
 export { default as RaspberryCreamCheese } from "./RaspberryCreamCheese.jpg";

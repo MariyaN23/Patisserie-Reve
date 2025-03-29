@@ -11,8 +11,8 @@ export const MenuItem = ({ title, children }: Props) => {
             <button className={'main-menu w-full py-3.5 relative xl:text-nowrap text-sm'}>{title}</button>
             {children && (
                 <div className={'submenu border-t border-rose-quartz shadow-sm pt-1'}>
-                    <div className={'w-screen-container mx-auto pb-8'}>
-                        <ul className={'max-w-96 relative'}>
+                    <div className={'w-screen-container mx-auto pb-40'}>
+                        <ul className={'max-w-64 relative'}>
                             {children}
                         </ul>
                     </div>
