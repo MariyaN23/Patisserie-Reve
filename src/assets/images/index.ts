@@ -3,7 +3,7 @@ export { default as GoldenHoneyButter } from "./Golden-Honey-Butter.webp";
 export { default as CrunchyAlmondFrangipane } from "./Crunchy-Almond-Frangipane.jpg";
 export { default as DarkChocolateSwirl } from "./Dark-Chocolate-Swirl.webp";
 export { default as RaspberryCreamCheese } from "./RaspberryCreamCheese.jpg";
-export { default as SaltedCaramelPecan } from "./SaltedCaramelPecan.jpeg";
+export { default as SaltedCaramelPecan } from "./SaltedCaramelPecan.jpg";
 export { default as MoltenLavaCake } from "./MoltenLavaCake.jpeg";
 export { default as TripleLayerFudge } from "./Triple-LayerFudge.jpg";
 export { default as ChocolateRaspberryTruffle } from "./Chocolate-RaspberryTruffle.jpeg";

@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
 @theme {
+    --color-petal-pink: oklch(98.5% 0.005 26.02);
     --color-cream: oklch(96.41% 0.0087 26.02);
     --color-rose-quartz: oklch(91.84% 0.0336 24.58);
     --color-dusty-rose: oklch(82.08% 0.0872 26.96);
     --color-coral: oklch(76.71% 0.1214 27.01);
     --width-screen-container: 1280px;
-    --font-primary: "League Script", "cursive";
+    --font-primary: "Imperial Script", "cursive";
     --font-secondary: "Open Sans", "sans-serif";
 }
 
@@ -19,13 +20,13 @@ html {
 body {
     font-style: var(--font-secondary);
     min-height: 100vh;
-    background: var(--color-cream);
+    background: var(--color-petal-pink);
     color: var(--color-coral);
 }
 
 h1 {
     font-family: var(--font-primary), cursive;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
@@ -108,7 +109,7 @@ li:last-of-type > .main-menu {
     top: 100%;
     left: 0;
     width: 100%;
-    background: var(--color-cream);
+    background: linear-gradient(var(--color-petal-pink), var(--color-cream));
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
@@ -117,6 +118,7 @@ li:last-of-type > .main-menu {
 .submenu .submenu {
     top: 0;
     left: 100%;
+    background: transparent;
 }
 
 .menu > li:hover > .submenu,
@@ -155,6 +157,7 @@ li:last-of-type > .main-menu {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    border: thick double var(--color-rose-quartz);
 }
 
 .group:hover .menu-image {
