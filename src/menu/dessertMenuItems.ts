@@ -19,15 +19,9 @@ import {
     TripleLayerFudge, VeganChocolateAvocadoMousseCake, VienneseWhirls,
     WhiteChocolateCranberry
 } from "../assets/images"
+import {MenuItem} from "../utils/types.ts";
 
-export type MenuItem = {
-    title: string
-    link?: string
-    image?: string
-    children?: MenuItem[]
-}
-
-export const menuItems: MenuItem[] = [
+export const dessertMenuItems: MenuItem[] = [
     {
         title: 'Morning Delights',
         children: [
