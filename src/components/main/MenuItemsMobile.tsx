@@ -1,10 +1,9 @@
 import {MenuItem} from "../../utils/types.ts";
 import {useState} from "react";
 import {paths} from "../../utils/paths.ts";
-import {useMenuItems} from "../../utils/items.ts";
+import {menuItems} from "../../utils/items.ts";
 
 export const MenuItemsMobile = () => {
-    const menuItems = useMenuItems()
     const menuTitles = {
         [paths.drinks]: 'Drinks Menu',
         [paths.desserts]: 'Desserts Menu',
