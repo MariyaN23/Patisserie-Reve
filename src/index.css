@@ -161,3 +161,10 @@ li:last-of-type > .main-menu {
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 768px){
+    .menu-image {
+        visibility: visible;
+        opacity: 1;
+    }
+}

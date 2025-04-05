@@ -4,23 +4,17 @@ type Props = {
     items: MenuItem[]
 }
 
-export const SubMenu = ({ items }: Props) => {
+export const SubMenu = ({items}: Props) => {
     return (
         <>
             {items.map((item, index) => (
                 <li key={index} className={item.children ? 'has-submenu' : 'group'}>
-                    {item.link ? (
-                        <a href={item.link}>
-                            {item.title}
-                        </a>
-                    ) : (
-                        <button className={'relative'}>
-                            {item.title}
-                        </button>
-                    )}
+                    <button className={'relative'}>
+                        {item.title}
+                    </button>
                     {item.children && (
                         <ul className={'submenu'}>
-                            <SubMenu items={item.children} />
+                            <SubMenu items={item.children}/>
                         </ul>
                     )}
                     {item.image && (

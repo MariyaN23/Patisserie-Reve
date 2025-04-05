@@ -1,4 +1,5 @@
 import {paths} from "../../utils/paths.ts";
+import {MenuItemsMobile} from "./MenuItemsMobile.tsx";
 
 export const Main = () => {
     return (
@@ -12,6 +13,7 @@ export const Main = () => {
                     <li><a href={paths.drinks}>Drinks</a></li>
                 </ul>
             </nav>
+            <MenuItemsMobile/>
         </main>
     )
 }

@@ -1,16 +1,10 @@
 import {MenuItem} from "./MenuItem.tsx";
 import {SubMenu} from "./SubMenu.tsx";
-import {dessertMenuItems} from "./dessertMenuItems.ts";
-import {paths} from "../../utils/paths.ts";
-import {drinkMenuItems} from "./drinksMenuItems.ts";
+import {menuItems} from "../../utils/items.ts";
 
 export const NavigationMenu = () => {
-    const menuItems = window.location.pathname.startsWith(paths.drinks) ? drinkMenuItems
-        : location.pathname.startsWith(paths.desserts) ? dessertMenuItems
-            : []
-
     return (
-        <nav className={'container'}>
+        <nav className={'container hidden md:block'}>
             <ul className={'menu flex justify-between w-full'}>
                 {menuItems.map((item, index) => (
                     <MenuItem key={index} title={item.title}>
