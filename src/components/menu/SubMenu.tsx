@@ -1,4 +1,4 @@
-import {MenuItem} from "../utils/types.ts";
+import {MenuItem} from "../../utils/types.ts";
 
 type Props = {
     items: MenuItem[]

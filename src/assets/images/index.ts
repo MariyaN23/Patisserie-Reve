@@ -1,3 +1,4 @@
+//desserts
 export { default as BerryChiaPudding } from "./BerryChiaPudding.jpg";
 export { default as GoldenHoneyButter } from "./Golden-Honey-Butter.webp";
 export { default as CrunchyAlmondFrangipane } from "./Crunchy-Almond-Frangipane.jpg";
@@ -30,3 +31,29 @@ export { default as CremeBruleeDonuts } from "./CremeBruleeDonuts.webp";
 export { default as MatchaWhiteChocolateEclairs } from "./MatchaWhiteChocolateEclairs.jpg";
 export { default as SaltedCaramelMacarons } from "./SaltedCaramelMacarons.jpg";
 export { default as PistachioRoseMadeleines } from "./PistachioRoseMadeleines.jpeg";
+
+//drinks
+export { default as ItalianEspresso } from "./ItalianEspresso.jpg";
+export { default as VienneseMelange } from "./VienneseMelange.jpg";
+export { default as FrenchCafeauLait } from "./FrenchCafeauLait.jpg";
+export { default as GreekFrappe } from "./GreekFrappe.jpg";
+export { default as TurkishCoffee } from "./TurkishCoffee.jpg";
+export { default as MexicanCafedeOlla } from "./MexicanCafedeOlla.jpg";
+export { default as EarlGrey } from "./EarlGrey.jpg";
+export { default as Matcha } from "./Matcha.webp";
+export { default as TeaWithJam } from "./TeaWithJam.jpg";
+export { default as Masala } from "./Masala.jpg";
+export { default as MintTea } from "./MintTea.jpg";
+export { default as JasminePearl } from "./JasminePearl.jpg";
+export { default as BrazilianLemonade } from "./BrazilianLemonade.jpg";
+export { default as MexicanHorchata } from "./MexicanHorchata.jpg";
+export { default as ItalianLimonata } from "./ItalianLimonata.jpg";
+export { default as Glintwine } from "./Glintwine.jpeg";
+export { default as SpanishHotChocolate } from "./SpanishHotChocolate.jpg";
+export { default as AustrianEinspanner } from "./AustrianEinspanner.jpg";
+export { default as HongKongMilkTea } from "./HongKongMilkTea.webp";
+export { default as IndianLassi } from "./IndianLassi.webp";
+export { default as ThaiIcedTea } from "./ThaiIcedTea.jpeg";
+export { default as Mojito } from "./Mojito.jpg";
+export { default as ShirleyTemple } from "./ShirleyTemple.jpg";
+export { default as TropicalPunch } from "./TropicalPunch.png";
