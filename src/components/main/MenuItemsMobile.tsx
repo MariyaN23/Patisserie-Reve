@@ -13,7 +13,7 @@ export const MenuItemsMobile = () => {
     const title = currentPath && menuTitles[currentPath]
 
     return (
-        <section className={'block md:hidden'}>
+        <section className={'block md:hidden pb-8'}>
             <h2>{title}</h2>
             <ul className={'space-y-2'}>
                 {menuItems.map((item, index) => (
@@ -46,7 +46,7 @@ const MenuItemComponent = ({item, depth = 0}: { item: MenuItem, depth?: number }
             )}
             {item.children && (
                 <div
-                    className={`opacity-0 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 max-h-full' : 'max-h-0'}`}>
+                    className={`transition-all duration-300 overflow-hidden ease-in-out ${isOpen ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'}`}>
                     <ul className={'mt-2 space-y-2'}>
                         {item.children.map((child, index) => (
                             <MenuItemComponent
