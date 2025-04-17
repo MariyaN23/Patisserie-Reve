@@ -12,7 +12,7 @@ export const MenuItem = ({ title, children }: Props) => {
             {children && (
                 <div className={'submenu border-t border-rose-quartz shadow-sm pt-1'}>
                     <div className={'w-screen-container mx-auto pb-40'}>
-                        <ul className={'max-w-64 relative'}>
+                        <ul className={'max-w-80 relative'}>
                             {children}
                         </ul>
                     </div>

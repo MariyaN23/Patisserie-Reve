@@ -13,6 +13,16 @@
     --font-secondary: "Open Sans", "sans-serif";
 }
 
+@layer theme {
+    .dark {
+        --color-petal-pink: oklch(30% 0.005 26.02);
+        --color-cream: oklch(35% 0.0087 26.02);
+        --color-rose-quartz: oklch(45% 0.0336 24.58);
+        --color-dusty-rose: oklch(55% 0.0872 26.96);
+        --color-coral: oklch(60% 0.1214 27.01);
+    }
+}
+
 html {
     height: 100%;
 }

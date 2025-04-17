@@ -18,7 +18,7 @@ export const SubMenu = ({items}: Props) => {
                         </ul>
                     )}
                     {item.image && (
-                        <div className='menu-image hidden group-hover:block absolute left-full top-0 w-64 h-48'>
+                        <div className='menu-image hidden group-hover:block absolute left-full top-0 w-64 h-48 ml-8'>
                             <img
                                 src={item.image}
                                 alt={item.title}
