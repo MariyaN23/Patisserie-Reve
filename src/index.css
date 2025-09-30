@@ -25,11 +25,14 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
     font-style: var(--font-secondary);
+    width: 100%;
     min-height: 100vh;
+    margin: 0 auto;
     background: var(--color-petal-pink);
     color: var(--color-coral);
 }
@@ -52,6 +55,7 @@ button {
 
 .container {
     max-width: var(--width-screen-container);
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 2rem;
@@ -177,4 +181,25 @@ li:last-of-type > .main-menu {
         visibility: visible;
         opacity: 1;
     }
+}
+
+.card {
+    --border-width: 2px;
+    border-radius: 1rem;
+    position: relative;
+    background: hsl(from var(--color-cream) h s l / 0.1);
+    backdrop-filter: blur(9px);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    border: var(--border-width) solid transparent;
+    background: linear-gradient(var(--color-coral), var(--color-cream), var(--color-dusty-rose)) border-box;
+    mask: linear-gradient(var(--color-coral), black) border-box,
+    linear-gradient(black, black) padding-box;
+    mask-composite: subtract;
 }
