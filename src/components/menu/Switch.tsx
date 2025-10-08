@@ -7,7 +7,7 @@ export const Switch = () => {
     const {darkTheme, toggleDarkTheme} = useContext(DarkThemeContext)
 
     return (
-        <div className={'flex gap-2'}>
+        <div className={'flex flex-col items-center sm:flex-row gap-2'}>
             {darkTheme ? <SunIcon/> : <MoonIcon/>}
             <div className={`flex w-9 h-5 rounded-full transition-all duration-300 cursor-pointer
             ${darkTheme ? 'bg-coral' : 'bg-rose-quartz'}`}

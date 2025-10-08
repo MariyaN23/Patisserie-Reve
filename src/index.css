@@ -176,7 +176,7 @@ li:last-of-type > .main-menu {
     opacity: 1;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .menu-image {
         visibility: visible;
         opacity: 1;
@@ -202,4 +202,29 @@ li:last-of-type > .main-menu {
     mask: linear-gradient(var(--color-coral), black) border-box,
     linear-gradient(black, black) padding-box;
     mask-composite: subtract;
+}
+
+.typewriter {
+    font-size: var(--text-xl);
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.typewriter span {
+    word-break: break-all;
+    height: 1.2em;
+    width: 0;
+    overflow: hidden;
+    animation: type 3s linear infinite alternate;
+}
+
+.typewriter span:before {
+    content: '';
+    display: inline-block;
+}
+
+@keyframes type {
+    90%, 100% {
+        width: 100%
+    }
 }

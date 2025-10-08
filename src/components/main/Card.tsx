@@ -7,7 +7,7 @@ type Props = {
 
 export const Card = ({title, subtitle, description, image}: Props) => {
     return (
-        <div className={'w-52 h-36 rounded-3xl mr-8 bg-cover'}
+        <div className={'w-52 h-36 rounded-3xl bg-cover'}
              style={{ backgroundImage: `url(${image})` }}
         >
             <div className={'h-full w-full flex flex-col items-center justify-center card'}>

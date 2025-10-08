@@ -6,11 +6,16 @@ export const Main = () => {
     return (
         <main className={'container my-8'}>
             <div className={'w-full flex gap-2 flex-col md:flex-row justify-between'}>
-                <div>
+                <div className={'text-balance'}>
                     <p>Discover our delicious desserts and refreshing drinks.</p>
                     <p>Perfect for any time of the day!</p>
                 </div>
-                <div className={'md:absolute right-0 space-y-2'}>
+                <div className={'flex flex-col items-center md:absolute right-0 space-y-2 mr-8'}>
+                    <span className={'typewriter'}>
+                        <span className={'text-xl'}>
+                            SALE
+                        </span>
+                    </span>
                     <Card
                         title={'50% OFF'}
                         subtitle={'After 8 pm'}
